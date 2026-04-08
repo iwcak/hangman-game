@@ -1,5 +1,3 @@
-from stages import STAGES
-
 class Game:
     def __init__(self, word):
         self.word = word
@@ -22,5 +20,5 @@ class Game:
     def is_lost(self):
         return self.attempts <= 0
     
-    def display_hangman(self):
-        return STAGES[6 - self.attempts]
+    # def display_hangman(self):
+    #     return STAGES[6 - self.attempts]
