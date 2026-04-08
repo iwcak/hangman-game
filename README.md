@@ -10,7 +10,6 @@ A simple command-line Hangman game written in Python.
 
 ## How to Run
 
-1. Clone the repository:
 ```bash
 git clone https://github.com/iwcak/hangman-game
 cd hangman-g
