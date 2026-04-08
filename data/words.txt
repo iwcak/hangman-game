@@ -4,3 +4,15 @@ programming
 computer
 github
 terminal
+developer
+repository
+debugging
+script
+linux
+branch
+commit
+variable
+version
+package
+library
+application
