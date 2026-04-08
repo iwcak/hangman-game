@@ -2,7 +2,7 @@ from src.player import Player
 from src.game import Game
 from src.word_loader import WordLoader
 from src.scoreboard import Scoreboard
-from src.stages import STAGES
+from src.stages import Stages
 
 loader = WordLoader("data/words.txt")
 word = loader.get_random_word()
@@ -13,6 +13,7 @@ player = Player(input("Your name: "))
 while not game.is_won() and not game.is_lost():
     print("Word:", " ".join(game.guessed))
     print("Attempts left: ", game.attempts)
+    print(Stages.STAGES[6 - game.attempts])
 
     letter = input("Guess letter : ")
 
@@ -22,7 +23,6 @@ while not game.is_won() and not game.is_lost():
 
     game.guess(letter)
 
-print(game.display_hangman())
 
 if game.is_won():
     print("You won!")
