@@ -1,4 +1,5 @@
-STAGES = [
+class Stages:
+    STAGES = [
     """
        -----
        |   |
